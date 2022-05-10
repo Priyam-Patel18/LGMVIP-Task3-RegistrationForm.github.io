@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="javascript/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <aside>
+        <center>Student Enrollment Form</center>
+        <h2 id="enst">Enrolled Students</h2>
+        <table border="4" id="print">
+            <thead>
+                <tr>
+                    <th class="_Name"> Name </th>
+                    <th class="_Email">Email</th>
+                    <th class="_enr"> Enrollment No.</th>
+                    <th class="_Gender"> Gender </th>
+                    <th class="_Skills"> Skills </th>
+                </tr>
+            </thead>
+        </table>
+        <section id="regform">
+            <h1 id="title">Registration Form</h1>
+            <form class="myForm">
+                <label class="name"> <input id="name" type="text" required placeholder="Name"></label><br>
+                <label class="email"><input id="email" type="email" required placeholder="Email"></label><br>
+                <label class="webs"><input id="enr" type="text" required placeholder="Enrollment Number"></label><br>
+                <div id="gen">
+                    <label>Gender:</label>
+                    <select id="gender">
+                        <option value="Male" selected>Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">other</option>
+                    </select><br>
+                </div>
+                <div id="skill">
+                    <label>Skills:</label>
+                    <select id="skills">
+                        <option value="Java" selected>JAVA</option>
+                        <option value="Html5">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JS</option>
+                    </select><br>
+                </div>
+                <div id="buttons">
+                    <input id="reset" type="reset" value="Reset">
+                    <input id="btn" type="button" value="Submit" onclick="AddRow()">
+                </div>
+            </form>
+        </section>
+</body>
+
+</html>
